@@ -1,0 +1,110 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    z-index: 5;
+    background-color: transparent;
+    position: relative;
+}
+
+.container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.navs {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+}
+
+.section-header {
+    background-image: url(./images/fond-test.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    z-index: 0;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: blur(10px); 
+    z-index: -2;
+}
+
+.on-image {
+    padding: 100px;
+    height: 50vh;
+}
+
+.img-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    padding-right: 60px;
+}
+
+.slogan{
+    padding-left: 60px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/fond-test.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container-btn-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+.contact button{
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.contact button a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.container-btn-img img{
+    padding-top: 50px;
+}
