@@ -350,7 +350,6 @@ section {
 /* ----------------- */
 .contact2{
     padding-top: 80px;
-    padding-bottom: 50px;
     font-family: 'Mulish', sans-serif;
     font-weight: 500;
     color: rgb(102, 101, 102);
@@ -368,4 +367,78 @@ section {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+}
+
+/* ------------------------- */
+/* .section-aide-alerte{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.titre-aide-alerte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+.box-gauche{
+    margin: 50px;
+    width: 50%;
+}
+
+.box-droite{
+    margin: 50px;
+    width: 50%;
+}
+
+.texte{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    color: rgb(102, 101, 102);
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.texte p {
+    padding-bottom: 20px;
+} */
+
+.section-aide-alerte{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.titre-aide-alerte{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    /* margin: 20px; */
+    /* text-align: left; */
+}
+
+.box-gauche{
+    margin: 100px;
+    width: 50%;
+}
+
+.box-droite{
+    margin: 100px;
+    width: 50%;
+}
+
+.texte{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    color: rgb(102, 101, 102);
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.texte p {
+    padding-bottom: 20px;
 }
