@@ -1,3 +1,5 @@
+// CARROUSSEL
+
 const carouselContainer = document.querySelector('.carousel-container');
 const slideWidth = carouselContainer.clientWidth;
 const carouselSlides = document.querySelectorAll('.carousel-slide');
@@ -39,3 +41,31 @@ function updateDots() {
   }
 
 createDots();
+
+// BOUTONS SUR LA CARTE NETTOYAGE
+document.getElementById("ouvrirModal").addEventListener("click", function() {
+    document.querySelector(".modal").style.display = "block";
+});
+
+document.querySelector(".close").addEventListener("click", function() {
+    document.querySelector(".modal").style.display = "none";
+    document.getElementById("poles").scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById("ouvrirModal2").addEventListener("click", function() {
+    document.querySelector(".modal2").style.display = "block";
+});
+
+document.querySelector(".close2").addEventListener("click", function() {
+    document.querySelector(".modal2").style.display = "none";
+    document.getElementById("poles").scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById("ouvrirModal3").addEventListener("click", function() {
+    document.querySelector(".modal3").style.display = "block";
+});
+
+document.querySelector(".close3").addEventListener("click", function() {
+    document.querySelector(".modal3").style.display = "none";
+    document.getElementById("poles").scrollIntoView({ behavior: 'smooth' });
+});

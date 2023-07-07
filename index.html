@@ -65,7 +65,7 @@
 
     <p class="phrase">Très orienté sur la satisfaction client, nous vous proposons nos solutions et nos services pour un résultat irréprochable. Confiez nous vos pré-occupations, on s’occupe de tout !</p>
 
-    <section>
+    <section id="poles">
         <h1 class="Poles">Nos pôles d'activités</h1>
         <div class="poles-activites">
             <div class="carte">
@@ -80,10 +80,42 @@
                 <h1>nettoyage</h1>
                 <p>Nous vous proposons tous types de nettoyages suite à insalubrité, à une remise en état, à une vente de votre bien immobilier, à un sinistre ou à un déménagement/emménagement pour que vous puissiez retrouver des lieux propres et sains.</p>
                 <div class="boutons">
-                    <button><a href="#">gros nettoyage</a></button>
-                    <button><a href="#">nettoyage standard</a></button>
-                    <button><a href="#">nettoyage fin de bail / fin de<br> chantier avant emménagement</a></button>
+                    <button id="ouvrirModal"><a href="#">gros nettoyage</a></button>
+                    <button id="ouvrirModal2"><a href="#">nettoyage standard</a></button>
+                    <button id="ouvrirModal3"><a href="#">nettoyage fin de bail / fin de<br> chantier avant emménagement</a></button>
                 </div>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Gros nettoyage</h2>
+                        <p>– Nous nettoyons en profondeur chacune des pièces de l’habitation ou du local, du sol au plafond en passant par les murs, les plinthes, les interrupteurs, les grilles de VMC, les escaliers, les portes, les fenêtres, les vitrages, les volets, les meubles, les radiateurs, la baignoire, la douche, le lavabo, l’évier, la plaque de cuisson, la TV, les appareils électroménager (réfrigérateur, micro-ondes …), les WC.</p>
+                        <p>– Nous nettoyons les évacuations bouchées.</p>
+                        <p>– Nous nous occupons de la gestion et de l’évacuation des déchets.</p>
+                        <p>– Nous pouvons élargir notre panel selon vos besoins.</p>
+                    </div>
+                </div>
+
+                <div class="modal2">
+                    <div class="modal-content">
+                        <span class="close2">&times;</span>
+                        <h2>Nettoyage standard</h2>
+                        <p>– Nous effectuons un nettoyage plus allégé. Nous nettoyons les sols de chaque pièce de l’habitation ou du local, la cuisine (plan de travail, évier, plaque de cuisson, table, appareils électroménager), la salle de bains (lavabo, baignoire, douche, miroirs), les WC.</p>
+                        <p>– Nous aspirons les moquettes et les tapis de sol.</p>
+                        <p>– Nous évacuons les déchets et remplaçons les sacs poubelles.</p>
+                    </div>
+                </div>
+
+                <div class="modal3">
+                    <div class="modal-content">
+                        <span class="close3">&times;</span>
+                        <h2>Nettoyage fin de bail / fin de chantier avant emménagement</h2>
+                        <p>– Nous nettoyons chaque pièce de l’habitation ou du local (sols, fenêtres, vitrages, volets, grille de VMC, éléments de salle de bains, éléments de cusine, WC, escaliers, portes).</p>    
+                        <p>– Nous nettoyons le garage, la cave, le grenier et les bâtiments annexes.</p>    
+                        <p>– Nous nous occupons de la gestion et de l’évacuation des déchets ou des gravats.</p>    
+                        <p>– Nous pouvons élargir notre panel selon vos besoins.</p>    
+                    </div>
+                </div>
+                
             </div>
             <div class="carte">
                 <img src="./images/pole3.jpg" alt="" srcset="">
@@ -266,7 +298,7 @@
                   <input type="text" id="adresse" name="adresse" placeholder="Adresse complète de l'intervention">
                   <textarea id="message" name="message" placeholder="Description du lieu d'intervention" required></textarea>
                   <div class="container-button-form">
-                      <button type="submit">Envoyer</button>
+                      <button class="envoyer" type="submit">Envoyer</button>
                   </div>
                 </form>
               </div>

@@ -90,6 +90,10 @@ section.navbar{
     text-transform: uppercase;
     border: none;
 }
+.contactez-nous {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, margin-top 0.3s ease-in-out;;
+}
 
 .section-header img{
     float: right;
@@ -642,4 +646,76 @@ color: white;
 .container-footer span a{
     text-decoration: none;
     color: #000;
+}
+
+/* HOVER EFFECTS */
+.contactez-nous:hover{
+    opacity: 0.8;
+    transform: translateY(-5px);
+    box-shadow: none;
+}
+button, .carte{
+    transition: margin-top 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    margin-top: -5px;
+    box-shadow: 0px 5px 5px 5px #e7e7e7;
+}
+
+.envoyer:hover{
+    margin-top: 0;
+}
+
+.carte:hover{
+    box-shadow: 0px 5px 5px 5px #e7e7e7;
+    margin-top: 1px;
+}
+
+/* ------------- */
+.modal,.modal2,.modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    text-align: center;
+
+    border: 2px solid green;
+}
+
+.modal-content p{
+    text-align: left;
+}
+
+.modal-content h2{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.close,.close2,.close3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close,.close2,.close3:hover,
+.close,.close2,.close3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
