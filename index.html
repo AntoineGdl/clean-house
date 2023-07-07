@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-        <section class="navbar">
+    <section class="navbar">
         <nav>
             <div class="container-header">
                     <a class="navs" href="./index.html">Clean House, le spécialiste du nettoyage extrême</a>
@@ -174,7 +174,7 @@
         <p>Nos devis sont gratuits et sans engagements.</p>
     
         <div class="contact2">
-            <button><a href="#bas-de-page">Contactez-nous</a></button>
+            <button class="contact1">Contactez-nous</button>
         </div>
     </section>
 
@@ -270,6 +270,8 @@
         </div>
     </section>
 
+    <div class="space"></div>
+
     <section class="valeurs background-image">
         <div class="container-valeurs">
             <h1>nos valeurs</h1>
@@ -287,15 +289,15 @@
         </div>
     </section>
 
-    <section class="nous-contacter">
+    <section id="contact" class="nous-contacter">
         <h1>Nous contacter</h1>
         <div class="container-contact">
             <div class="gauche-form">
                 <form class="formulaire-contact">
                   <input type="text" id="nom" name="nom" placeholder="Nom" required>
                   <input type="text" id="prénom" name="prénom" placeholder="Prénom" required>
-                  <input type="text" id="num" name="num" placeholder="Téléphone">
-                  <input type="text" id="adresse" name="adresse" placeholder="Adresse complète de l'intervention">
+                  <input type="text" id="num" name="num" placeholder="Téléphone" required>
+                  <input type="text" id="adresse" name="adresse" placeholder="Adresse complète de l'intervention" required>
                   <textarea id="message" name="message" placeholder="Description du lieu d'intervention" required></textarea>
                   <div class="container-button-form">
                       <button class="envoyer" type="submit">Envoyer</button>
@@ -318,6 +320,6 @@
             <h1>&copy; Clean House 2023 <span><a href="#">Mentions légales</a></span></h1>
         </div>
     </footer>
-</body>
     <script src="./index.js"></script>
+</body>
 </html>

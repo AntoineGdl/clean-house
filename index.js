@@ -69,3 +69,12 @@ document.querySelector(".close3").addEventListener("click", function() {
     document.querySelector(".modal3").style.display = "none";
     document.getElementById("poles").scrollIntoView({ behavior: 'smooth' });
 });
+
+// REDIRECTION DES BOUTONS "contactez-nous"
+document.querySelector(".contactez-nous").addEventListener("click", function() {
+    document.getElementById("contact").scrollIntoView({ behavior: 'smooth' });
+});
+
+document.querySelector(".contact1").addEventListener("click", function() {
+    document.getElementById("contact").scrollIntoView({ behavior: 'smooth' });
+});

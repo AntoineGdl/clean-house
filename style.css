@@ -7,11 +7,6 @@
     box-sizing: border-box;
 }
 
-nav {
-    z-index: 5;
-    background-color: transparent;
-}
-
 .navs {
     margin: 0 20px;
     text-decoration: none;
@@ -23,7 +18,6 @@ nav {
 section.navbar{
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 75vh; */
     position: relative;
     z-index: 0;
 }
@@ -41,6 +35,7 @@ section.navbar{
     background-size: cover;
     height: 700px;
 }
+
 .navbar::before{
     content: "";
     position: absolute;
@@ -49,10 +44,8 @@ section.navbar{
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    filter: blur(10px); 
     z-index: -2;
 }
-
 
 .section-header .bloc1{
     padding-top: 100px;
@@ -279,7 +272,7 @@ section {
     border: none;
     cursor: pointer;
 }
-.contact2 button a{
+.contact2 button {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -475,6 +468,10 @@ section.zone-intervention{
 
 }
 /* ---------------------------------------------------- */
+.space{
+    height: 50px;
+}
+/* ---------------------------------------------------- */
 .valeurs {
     position: relative;
 }
@@ -515,7 +512,6 @@ color: white;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    filter: blur(10px); 
 }
 
 .container-valeurs h1{
