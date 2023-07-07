@@ -344,3 +344,44 @@ section.presentation p{
 
 /* ------------ */
 
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 50%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-dots {
+    bottom: 20px; 
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 50%;
+    margin: 20px 6px;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background-color: #bdbdbd;
+}
