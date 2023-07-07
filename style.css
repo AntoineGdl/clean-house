@@ -385,3 +385,33 @@ section.presentation p{
 .carousel-dot.active {
     background-color: #bdbdbd;
 }
+
+.carousel p{
+    margin: 20px;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    color: rgb(102, 101, 102);
+    font-size: 1.1rem;
+}
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.charte-qualite {
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.charte-qualite a{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    color: #000;
+}
