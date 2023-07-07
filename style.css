@@ -622,3 +622,24 @@ color: white;
     font-family: 'Mulish', sans-serif;
     font-weight: 500;
 }
+
+/* ------------------ */
+
+.container-footer{
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.container-footer h1{
+    padding-top: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.container-footer span a{
+    text-decoration: none;
+    color: #000;
+}
