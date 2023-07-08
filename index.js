@@ -1,3 +1,19 @@
+// BUTTON SCROLL TO TOP
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollBtn").style.display = "none";
+  }
+}
+
+function scrollTopSmooth() {
+  document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.documentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 // NAVBAR FIXED
 window.addEventListener("scroll", function() {
     var navbar = document.querySelector(".container-header");
