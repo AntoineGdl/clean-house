@@ -1,8 +1,57 @@
+// NAVBAR RESPONSIVE
+  const menuSlide = () => {
+  const menuIcon = document.querySelector(".menu-icon");
+  const navLinks = document.querySelector(".navbar ul");
+  const navLinksInner = document.querySelectorAll(".navbar ul li");
+  const scrollButton = document.getElementById("scrollBtn"); // Get the scroll button element
+
+  
+  menuIcon.addEventListener("click", () => {
+    navLinks.classList.toggle("menu-active");
+
+    navLinksInner.forEach((li, index) => {
+      if (li.style.animation) {
+        li.style.animation = "";
+      } else {
+        li.style.animation = `navLinkAnime 0.5s ease forwards ${
+          index / 7 + 0.3
+        }s`;
+      }
+    });
+    
+    menuIcon.classList.toggle("span-anime");
+
+    // NON AFFICHAGE LORS DE L'OUVERTURE DU MENU
+    if (navLinks.classList.contains("menu-active")) {
+      scrollButton.style.display = "none";
+    } else {
+      scrollButton.style.display = "block";
+    }
+
+    // NON AFFICHAGE LORS DU SCROLL SUR LE MENU
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      const scrollButton = document.getElementById("scrollBtn");
+      const navLinks = document.querySelector(".navbar ul");
+
+      if ((document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) && !navLinks.classList.contains("menu-active")) {
+        scrollButton.style.display = "block";
+      } else {
+        scrollButton.style.display = "none";
+      }
+    }
+  });
+};
+
+menuSlide();
+
+
 // BUTTON SCROLL TO TOP
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     document.getElementById("scrollBtn").style.display = "block";
   } else {
     document.getElementById("scrollBtn").style.display = "none";
@@ -13,6 +62,7 @@ function scrollTopSmooth() {
   document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
   document.documentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
 
 // NAVBAR FIXED
 window.addEventListener("scroll", function() {
