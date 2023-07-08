@@ -1,3 +1,15 @@
+// NAVBAR FIXED
+window.addEventListener("scroll", function() {
+    var navbar = document.querySelector(".container-header");
+    var scrolled = window.scrollY > 0;
+    if (scrolled) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+  
+
 // CARROUSSEL
 
 const carouselContainer = document.querySelector('.carousel-container');

@@ -8,11 +8,16 @@
 }
 
 .navs {
-    margin: 0 20px;
+    margin: 0 0 20px 20px;
     text-decoration: none;
     color: #fff;
     font-family: 'Mulish', sans-serif;
     font-weight: 300;
+}
+.navs i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: rgb(255, 255, 255);
 }
 
 section.navbar{
@@ -24,16 +29,37 @@ section.navbar{
 
 .container-header {
     display: flex;
-    justify-content: center;
+    top: 0;
     align-items: center;
     padding-top: 20px;
+    position: fixed;
+    z-index: 10;
 }
 
-.navbar{
+.navbar {
+    align-items: center;
+    justify-content: center;
+    display: flex;
     background-image: url(./images/fond-test.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.container-header.scrolled{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #bbbbbb;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 50px;
+}
+.container-header.scrolled p, .container-header.scrolled a, .container-header.scrolled a i, .container-header.scrolled p i {
+    color: #000;
 }
 
 .navbar::before{
@@ -328,6 +354,7 @@ h3{
     padding-bottom: 70px;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -2;
 }
 
 .equipement::before{
@@ -343,12 +370,11 @@ h3{
     background-repeat: no-repeat;
     background-size: 700px;
     opacity: 0.3;
-    z-index: -20;
+    z-index: -1;
 }
-.equipement{
+/* .equipement{
     background-color: #ffffff;
-    z-index: -2;
-}
+} */
 section.presentation img{
     padding-right: 5px;
     padding-bottom: 5px;
@@ -379,6 +405,7 @@ section.presentation p{
     width: 100%;
     overflow: hidden;
     padding-bottom: 20px;
+    z-index: -2;
   }
   
 .carousel-container {
@@ -502,6 +529,7 @@ color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    z-index: -2;
 }
 
 .background-image::before{
@@ -512,6 +540,7 @@ color: white;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .container-valeurs h1{
