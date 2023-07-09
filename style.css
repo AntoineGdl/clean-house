@@ -49,7 +49,7 @@
 .container-header.scrolled{
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #bbbbbb;
+    background-color: #919191;
     transition: background-color 0.3s ease-in-out;
     border-radius: 50px;
 }
@@ -63,17 +63,17 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    z-index: 10;
 }
 
 .section-header .bloc1 .logo{
     padding: 0 0 0 0;
 }
 
-.section-header .bloc1 p{
+.section-header .bloc1 .spans{
     color: white;
     font-size: 5rem;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-header .bloc2{
@@ -82,7 +82,7 @@
     align-items: center;
     justify-content: center;
 }
-.bloc1 p{
+.bloc1 .spans{
     font-size: 1.2rem;
     font-family: 'Mulish', sans-serif;
     font-weight: 500;
@@ -126,13 +126,17 @@
     display: none;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE NAVBAR */
 @media screen and (max-width: 1240px) {
+    .navbar{
+        left: 0;
+    }
     .container-header {
         position: fixed;
         background-color :rgb(145, 145, 145);
         padding: 20px;
         width: 100vw;
+        left:0px;
     }
 
     .container-header .menu-icon {
@@ -185,7 +189,7 @@
     
     .container-header.scrolled{
         border-radius: 0px;
-    }
+    }    
 }
 
 .container-header ul.menu-active {
@@ -868,4 +872,62 @@ button:hover{
 #scrollBtn:hover {
     opacity: 1;
     box-shadow: none;
+}
+
+/* RESPONSIVE TABLETTES */
+@media screen and (max-width: 1240px) {
+    /*  */
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .bloc1 {
+        flex-direction: column;
+    }
+
+    .bloc1 img{
+        margin-top: 0px;
+        width: 350px;
+    }
+
+    .section-header .bloc1 .spans {
+        color: white;
+        font-size: 4rem;
+        padding-top: 0; 
+    }
+
+    .navbar{
+        height: 800px;
+    }
+
+    .section-header img{
+        padding: 0 0 0 0;
+        margin: 20px;
+    }
+
+    .container-header.scrolled{
+        z-index: 999;
+    }
+}
+
+/* RESPONSIVE SMARTPHONES */
+@media screen and (max-width: 600px) and (min-width:500px) {
+    .bloc1 img{
+        width: 250px;
+    }
+
+    .section-header .bloc1 .spans {
+        color: white;
+        font-size: 2rem;
+        padding-top: 0; 
+    }
+
+    .navbar{
+        height: 650px;
+    }
 }
