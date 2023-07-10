@@ -1,3 +1,8 @@
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 0);
+});
+
 // NAVBAR RESPONSIVE
   const menuSlide = () => {
   const menuIcon = document.querySelector(".menu-icon");

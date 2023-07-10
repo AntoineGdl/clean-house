@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+.navbar.scrolled .nav-links a,
+.navbar.scrolled .nav-links p {
+  color: #000; 
+}
+
 .nav-links a,.nav-links p {
     margin: 0 0 20px 20px;
     text-decoration: none;
@@ -49,12 +54,9 @@
 .container-header.scrolled{
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #919191;
+    background-color: #e2e2e2;
     transition: background-color 0.3s ease-in-out;
     border-radius: 50px;
-}
-.container-header.scrolled p, .container-header.scrolled a, .container-header.scrolled a i, .container-header.scrolled p i {
-    color: #000;
 }
 
 .section-header .bloc1{
@@ -117,7 +119,7 @@
     border-radius: 15px;
     width: 25px;
     height: 5px;
-    background-color: #fff;
+    background-color: #000000;
     margin: 5px;
     transition: all 0.4s ease;
 }
@@ -133,7 +135,7 @@
     }
     .container-header {
         position: fixed;
-        background-color :rgb(145, 145, 145);
+        background-color : #E2E2E2;
         padding: 20px;
         width: 100vw;
         left:0px;
@@ -148,7 +150,7 @@
     .container-header .logo {
         flex-grow: 1;
         display: flex;
-        color: #fff;
+        color: #000;
         text-transform: uppercase;
         font-family: 'Lato', sans-serif;
         font-weight: 800;
@@ -167,9 +169,9 @@
         transition: transform 0.5s ease-in;
         width: auto;
     }
-
+    
     .container-header.scrolled p, .container-header.scrolled a, .container-header.scrolled a i, .container-header.scrolled p i {
-        color: #fff;
+        /* color: #000; */
     }
 
     .container-header ul li {
@@ -178,7 +180,7 @@
         opacity: 0;
         flex-direction: column;
         position: fixed;
-        background-color: #233833;
+        background-color: #E2E2E2;
         align-items: center; 
         justify-content: center; 
     }
@@ -223,44 +225,15 @@
 }
 
 /* ------------------- */
-/* .activites {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.activite {
-    text-align: center;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-.activite img {
-    max-width: 100%;
-    height:9vw;
-}
-
-.activite p {
-    font-family: 'Mulish', sans-serif;
-    font-weight: 700;    
-} */
-
 .activites .container {
-    display: flex; /* Utilise un conteneur flexible pour aligner les éléments en ligne */
+    display: flex; 
     margin-top: 10px;
   }
   
   .activite {
-    flex: 1; /* Permet aux éléments de prendre une part égale de l'espace disponible */
-    margin-right: 5px; /* Ajoute une marge à droite pour espacer les images */
-    margin-left: 5px; /* Ajoute une marge à droite pour espacer les images */
+    flex: 1;
+    margin-right: 5px; 
+    margin-left: 5px; 
   }
   
   
@@ -366,6 +339,8 @@ section {
 .partie-1 {
     display: flex;
     align-items: center;
+    justify-content: space-between;    
+    margin-right: 150px;
 }
 
 .gauche {
@@ -406,6 +381,10 @@ section {
     font-weight: 500;
     color: rgb(102, 101, 102);
     font-size: 1.1rem;
+}
+
+.texte-gauche-responsive{
+    display: none;
 }
 .partie-1 .gauche img,.partie-2 .droite-inverse img {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -965,6 +944,39 @@ button:hover{
     .carte .boutons{
         display: none;
     }
+    /* IMG TXT */
+    .container-img-txt{
+        margin-top: 25px;
+    }
+    .partie-2,.partie-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gauche-inverse{
+        display: none;
+    }
+
+    .texte-gauche-responsive{
+        display: block;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 500;
+        color: rgb(102, 101, 102);
+        font-size: 1.1rem;
+    }
+
+    .texte-gauche-responsive p{
+        margin: 20px;
+    }
+
+    .partie-1 p, .partie-2 p{
+        text-align: center;
+    }
+
+    .droite {
+        padding-top: 25px;
+    }
 
 }
 
@@ -987,4 +999,16 @@ button:hover{
     .carte{
         width: auto;
     }
+
+    /* IMG TXT */
+    .gauche img, .droite-inverse img{
+        height: 300px;
+    }
+
+    .partie-1 p, .partie-2 p, .texte-gauche-responsive p {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100vw;
+    }
+
 }
